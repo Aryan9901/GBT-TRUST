@@ -1,25 +1,25 @@
-# Ganpati Balaji Trust (GBT) 
+# Ganpati Balaji Trust (GBT)
 
-Welcome to the Ganpati Balaji Trust (GBT) app! This app is designed to provide you with all the information you need about the trust and its activities. 
+Welcome to the Ganpati Balaji Trust (GBT) app! This app is designed to provide you with all the information you need about the trust and its activities.
 
 ## Features
 
-- Explore the history and significance of Ganpati Balaji Trust
-- Manage and track your network and downline
-- Learn about the various initiatives and projects undertaken by the trust
-- Connect with other devotees and share your experiences
-- Donate to support the trust's noble cause
+-   Explore the history and significance of Ganpati Balaji Trust
+-   Manage and track your network and downline
+-   Learn about the various initiatives and projects undertaken by the trust
+-   Connect with other devotees and share your experiences
+-   Donate to support the trust's noble cause
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Collaboration](#collaboration)
-- [Contributing](#contributing)
-- [License](#license)
+-   [Introduction](#introduction)
+-   [Features](#features)
+-   [Getting Started](#getting-started)
+-   [Tech Stack](#tech-stack)
+-   [Installation](#installation)
+-   [Collaboration](#collaboration)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## Introduction
 
@@ -33,12 +33,13 @@ To get started with the GBT app, follow these steps:
 2. Install the required dependencies: `npm install`
 
 3. Set up the environment variables:
+
     - Create a `.env` file in the root directory of the project.
     - Add the necessary environment variables to the `.env` file. For example:
-      ```
-      PORT=3000
-      MONGODB_URI=mongodb://localhost:27017/gbt-app
-      ```
+        ```
+        PORT=3000
+        MONGODB_URI=mongodb://localhost:27017/gbt-app
+        ```
     - Save the `.env` file.
 
 4. Start the development server: `npm run dev`
@@ -47,13 +48,13 @@ To get started with the GBT app, follow these steps:
 
 The GBT app is built using the following technologies:
 
-- React.js: A JavaScript library for building user interfaces
-- Redux Toolkit: A library for managing state in React applications
-- Chakra UI: A simple and modular UI component library for React
-- Formik: A form library for React that helps with form validation, handling, and submission
-- Chart.js: A JavaScript library for creating interactive charts and graphs
-- emailjs-com: A library for sending emails using JavaScript
-- MongoDB: A NoSQL database for storing application data
+-   React.js: A JavaScript library for building user interfaces
+-   Redux Toolkit: A library for managing state in React applications
+-   Chakra UI: A simple and modular UI component library for React
+-   Formik: A form library for React that helps with form validation, handling, and submission
+-   Chart.js: A JavaScript library for creating interactive charts and graphs
+-   emailjs-com: A library for sending emails using JavaScript
+-   MongoDB: A NoSQL database for storing application data
 
 ## Installation
 
@@ -84,6 +85,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 The following individuals have contributed to the development of the GBT app:
 
-- Raj Malpani ([@RajMalpani](https://github.com/CODER-Rxj11))
-- Aryan Gupta ([@AryanGupta](https://github.com/aryan9901))
-- TryIdol Technologies ([@TryIdol](https://github.com/Techidol))
+-   Aryan Gupta ([@AryanGupta](https://github.com/aryan9901))
+-   TryIdol Technologies ([@TryIdol](https://github.com/Techidol))
