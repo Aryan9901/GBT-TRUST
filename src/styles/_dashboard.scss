@@ -1,0 +1,121 @@
+.dashboard {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> h2 {
+		font-size: 2.2rem;
+		margin: 1rem 2rem;
+	}
+	//**  widgetcontainer
+	.widget-container {
+		@include flex(row, space-around, stretch, 1rem);
+		flex-wrap: wrap;
+		padding: 1rem 4rem;
+		.widget {
+			border-radius: 10px;
+			// @include square(15rem);
+			min-width: 20rem;
+			max-width: 28rem;
+			width: 22rem;
+			color: #fcfcfc;
+			// height: rem;
+			background-color: $secondaryColor;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
+			padding: 0 0.5rem;
+			@include flex(column, center, center, 0.4rem);
+			> div:nth-child(1) {
+				@include flex(row, unset, center, 2rem);
+				width: 100%;
+				padding: 0.5rem 0.2rem;
+				> i {
+					// @include square(2.4rem);
+					@include flex(row, center, center, 0);
+					border-radius: 50%;
+					> svg {
+						font-size: 2rem;
+					}
+				}
+				> p {
+					font-size: 1.1rem;
+					@include flex(row, center, center);
+					> svg {
+						font-size: 1.4rem;
+					}
+				}
+			}
+			> h2 {
+				font-size: 2.5rem;
+				text-align: start;
+			}
+			> h5 {
+				margin-top: 1rem;
+				align-self: flex-end;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	// ** graph-container
+	.dashboard-chart {
+		@include flex(column, start, start);
+		width: 90%;
+		border: 2px solid $primaryColor;
+		border-radius: 12px;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		padding: 1rem 4rem;
+		> .chart-header {
+			width: 100%;
+			@include flex(row, space-between, center);
+		}
+		> canvas {
+			padding: 0rem -5rem;
+		}
+		> .chart-footer {
+			width: 100%;
+			@include flex(row, space-between, center);
+			.left-footer {
+				@include flex(row, center, center);
+				.circ {
+					@include square(2rem);
+					border-radius: 50%;
+					background-color: $primaryColor;
+				}
+			}
+			.right-footer {
+				h4 {
+					color: $primaryColor;
+					span {
+						color: $secondaryColor;
+					}
+				}
+			}
+		}
+	}
+	.ongoing {
+		padding: 1rem 4rem;
+		> .ongoingEventTableContainer {
+			box-shadow: 0 1px 1px 1px $secondaryColor;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+	}
+
+	// TABLE LEVELS
+	.levels {
+		width: 100%;
+		padding: 0rem 4rem;
+		padding-bottom: 1rem;
+		> .dashboardOngoingEventTableContainer {
+			// border: 1px solid $primaryColor;
+			box-shadow: 0 1px 1px 1px $primaryColor;
+			.tableHeading {
+				background-color: $primaryColor;
+				color: #fcfcfc;
+				font-weight: 600;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

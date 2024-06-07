@@ -1,0 +1,161 @@
+.request {
+    padding: 1rem 2rem;
+
+    >.event {
+        width: 100%;
+
+        >form {
+            width: 100%;
+            border: 2px solid $secondaryColor;
+            border-radius: 1rem;
+            @include flex(column, flex-start, center, 0);
+
+            >h1 {
+                width: 100%;
+                padding: 1rem;
+                text-align: left;
+            }
+
+            >.event-basic {
+                width: 100%;
+                @include flex(row, center, center);
+                padding: 0 1rem;
+
+                >.left {
+                    width: 100%;
+                    @include flex(column, flex-start, center);
+
+                    >input {
+                        @include inputStyles;
+                        border: 1px solid $secondaryColor;
+                        background-color: #d5d3d4;
+
+                        &::placeholder {
+                            color: #000;
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                >.right {
+                    width: 100%;
+                    @include flex(column, center, center);
+
+                    >textarea {
+                        @include inputStyles;
+                        outline: none;
+                        border: none;
+                        height: 12rem;
+                        background-color: #d5d3d4;
+                        border: 1px solid $secondaryColor;
+
+                        &::placeholder {
+                            color: #000;
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            >.event-timings {
+                width: 100%;
+                @include flex(row, space-between, center);
+                padding: 1rem;
+                padding-right: 2rem;
+
+                input[type="date"],input[type="time"],input[type="number"] {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1.5px solid $secondaryColor;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    outline: none;
+                    transition: border-color 0.3s ease;
+                    background-color: #d5d3d4;
+                }
+
+                input[type="date"]:focus,input[type="time"]:focus,input[type="number"]:focus {
+                    border-color: $primaryColor;
+                }
+            }
+
+            >.event-otherinfo {
+                width: 100%;
+                @include flex(row, space-between, center);
+                padding: 1rem;
+                padding-right: 2rem;
+
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1.5px solid $secondaryColor;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    outline: none;
+                    transition: border-color 0.3s ease;
+                    background-color: #d5d3d4;
+
+                    &::placeholder {
+                        color: #000;
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            > .bank-details{
+                width: 100%;
+                @include flex(column, space-between, center);
+                padding: 1rem;
+                > h3{
+                    align-self: flex-start;
+                }
+                > div{
+                    @include grid(50% 50%);
+                    width: 100%;
+                    padding-right: 2rem;
+                    > input{
+                        @include inputStyles;
+                        border: 1px solid $secondaryColor;
+                        background-color: #d5d3d4;
+                        &::placeholder {
+                            color: #000;
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            >button{
+                margin: 1rem;
+                align-self: flex-start;
+            }
+        }
+    }
+    >.request-table{
+        width: 100%;
+        margin-top: 1rem;
+        border: 2px solid $secondaryColor;
+        border-radius: 10px;
+        overflow: hidden;
+        .search {
+            padding: 0.5rem 2rem;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            gap: 1rem;
+            > input {
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 0.5rem;
+                border-radius: 5px;
+                background-color: transparent;
+            }
+            
+        }
+    } 
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- login Page -->
+    <url>
+        <loc>http://localhost:5173/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <!-- Dummy metadata for the login page -->
+        <image:image>
+            <image:loc>http://localhost:5173/images/login.jpg</image:loc>
+            <image:title>Login Page Image</image:title>
+            <image:caption>This is the image for the Login page</image:caption>
+        </image:image>
+        <!-- Description for the login page -->
+        <description>This vibrant login page welcomes you to the world of GBT Trust - Ganpati Balaji Trust, your gateway to seamless access and personalized experiences. Unlock the doors to a community-driven platform designed to serve you with utmost trust and devotion. Embrace convenience, security, and empowerment every time you login.</description>
+    </url>
+
+    <!-- Sign Up Page -->
+    <url>
+        <loc>http://localhost:5173/signup</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <!-- Dummy metadata for the sign up page -->
+        <image:image>
+            <image:loc>http://localhost:5173/images/signup.jpg</image:loc>
+            <image:title>Sign Up Page Image</image:title>
+            <image:caption>This is the image for the sign up page</image:caption>
+        </image:image>
+        <!-- Description for the sign up page -->
+        <description>Join our vibrant community with ease! Sign up now and unlock exclusive benefits with a simple click. Enter your referral code to embark on a journey enriched with rewards and camaraderie. Experience the joy of seamless registration and dive into a world of opportunities. Your adventure begins here!</description>
+    </url>
+
+    <!-- Dashboard page -->
+    <url>
+         <loc>http://localhost:5173/dashboard</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the dashboard page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/dashboard.jpg</image:loc>
+          <image:title>Dashboard Page Image</image:title>
+          <image:caption>This is the image for the Dashboard page</image:caption>
+      </image:image>
+      <!-- Description for the reset dashboard page -->
+      <description>Empower with insights on our dynamic dashboard! Explore personalized stats, vibrant community data, collective achievements. Experience data-driven decisions and community engagement, all in one place.</description>
+    </url>
+     <!-- profile page -->
+    <url>
+         <loc>http://localhost:5173/profile</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the profile page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/profile.jpg</image:loc>
+          <image:title>Profile Page Image</image:title>
+          <image:caption>This is the image for the profile page</image:caption>
+      </image:image>
+      <!-- Description for the reset profile page -->
+      <description>Elevate your profile! Easily customize personal details, correct discrepancies, add bank account info and DOB. Refine your digital identity for seamless community interactions. Empower yourself with control and convenience.</description>
+    </url>
+     <!-- payment page -->
+    <url>
+     <loc>http://localhost:5173/payment</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the payment page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/payment.jpg</image:loc>
+          <image:title>Payment Page Image</image:title>
+          <image:caption>This is the image for the Payment page</image:caption>
+      </image:image>
+      <!-- Description for the reset payment page -->
+      <description>Unlock community benefits! Join and unlock referral system eligibility with a Rs. 580 payment. Start your journey with us today!</description>
+    </url>
+     <!-- team page -->
+    <url>
+     <loc>http://localhost:5173/team</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the team page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/team.jpg</image:loc>
+          <image:title>Team Page Image</image:title>
+          <image:caption>This is the image for the Team page</image:caption>
+      </image:image>
+      <!-- Description for the reset team page -->
+      <description>Keep tabs on your team's progress effortlessly with our Team page! Monitor achievements and growth, track milestones, and celebrate contributions. Foster collaboration and synergy among team members, driving towards shared goals and celebrating collective success.</description>
+    </url>
+     <!-- program page -->
+    <url>
+         <loc>http://localhost:5173/program</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the program page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/program.jpg</image:loc>
+          <image:title>Program Page Image</image:title>
+          <image:caption>This is the image for the Program page</image:caption>
+      </image:image>
+      <!-- Description for the reset program page -->
+      <description>Propose charity programs and impactful initiatives easily on our platform! Share ideas for meaningful projects that make a difference. Simplify suggesting charitable endeavors and impactful activities. Empower community engagement by advocating noble causes, inspiring positive change.</description>
+    </url>
+     <!-- request page -->
+    <url>
+     <loc>http://localhost:5173/request</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the request page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/request.jpg</image:loc>
+          <image:title>Request Page Image</image:title>
+          <image:caption>This is the image for the Request page</image:caption>
+      </image:image>
+      <!-- Description for the reset request page -->
+      <description>Initiate quick and secure fund transfers from your wallet to your bank account through our request page. Simplify financial transactions with seamless money transfers, ensuring convenience and control over your funds.</description>
+    </url>
+     <!-- refers page -->
+    <url>
+         <loc>http://localhost:5173/refers</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the refers page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/refers.jpg</image:loc>
+          <image:title>Refers Page Image</image:title>
+          <image:caption>This is the image for the Refers page</image:caption>
+      </image:image>
+      <!-- Description for the reset refers page -->
+      <description>Effortlessly manage your referrals on our Refer page! Copy and share your referral URL via email or other channels. Track user progress to see which steps they've completed, empowering you to guide them effectively. Maximize your referral potential with ease, leveraging our user-friendly interface to expand your network and maximize rewards.</description>
+    </url>
+     <!-- tree page -->
+    <url>
+         <loc>http://localhost:5173/tree</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the tree page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/tree.jpg</image:loc>
+          <image:title>Tree Page Image</image:title>
+          <image:caption>This is the image for the Tree page</image:caption>
+      </image:image>
+      <!-- Description for the reset tree page -->
+      <description>Visualize and navigate your referral network effortlessly with our interactive tree page! Easily track connections, identify key referrals, and expand your network with clarity and precision.</description>
+    </url>
+     <!-- epin page -->
+    <url>
+         <loc>http://localhost:5173/epin</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the epin page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/epin.jpg</image:loc>
+          <image:title>epin Page Image</image:title>
+          <image:caption>This is the image for the epin page</image:caption>
+      </image:image>
+      <!-- Description for the reset epin page -->
+      <description>Reset your password using this page.</description>
+    </url>
+     <!-- statements page -->
+    <url>
+         <loc>http://localhost:5173/statements</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the statements page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/statement.jpg</image:loc>
+          <image:title>statements Page Image</image:title>
+          <image:caption>This is the image for the statements page</image:caption>
+      </image:image>
+      <!-- Description for the reset statements page -->
+      <description>View all your transactions on our Statements page! Track credits and debits with ease, staying informed about your financial activity. Access a comprehensive overview of your transaction history, ensuring transparency and accountability. Simplify financial management and stay in control of your funds effortlessly.</description>
+    </url>
+     <!-- transfer page -->
+    <url>
+         <loc>http://localhost:5173/bank/transfer</loc>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+         <!-- Dummy metadata for the transfer page -->
+        <image:image>
+          <image:loc>http://localhost:5173/images/bank.jpg</image:loc>
+          <image:title>Bank Transfer Page Image</image:title>
+          <image:caption>This is the image for the Bank Transfer page</image:caption>
+      </image:image>
+      <!-- Description for the reset transfer page -->
+      <description>Initiate fund requests on /bank/transfer! Users can submit withdrawal requests for admin approval. Seamlessly manage requests, empowering admins to approve or deny withdrawals, ensuring smooth fund transfers. Simplify financial transactions and maintain control over fund disbursements with our streamlined process.</description>
+    </url>
+</urlset>

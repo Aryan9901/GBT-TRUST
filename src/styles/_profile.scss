@@ -1,0 +1,274 @@
+.profile {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	@include flex(row, flex-start, flex-start, 0);
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 2rem;
+	> .avatar-section {
+		// border: 2px solid $secondaryColor;
+		box-shadow: $secondaryColor 0px 0px 0px 1.5px;
+		border-radius: 10px;
+		padding: 3rem 5rem;
+		position: relative;
+		@include flex(column, center, center, 0.6rem);
+		> h1 {
+			position: absolute;
+			top: 5%;
+			right: 5%;
+		}
+		> img {
+			width: 8rem;
+			height: 8rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		> h3 {
+			font-size: 1.5rem;
+			font-weight: normal;
+		}
+
+		> h5 {
+			font-size: 1rem;
+			font-weight: 600;
+
+			> span {
+				color: $secondaryColor;
+			}
+		}
+	}
+
+	> .container {
+		width: calc(100% - 23rem);
+		@include flex(column, flex-start, flex-start, 1rem);
+		.top {
+			width: 100%;
+			padding: 1rem 0.3rem;
+			// border: 1.5px solid $secondaryColor;
+			box-shadow: $secondaryColor 0px 0px 0px 1.5px;
+			border-radius: 10px;
+
+			.header {
+				@include flex(row, space-between, center, 0.3rem);
+				flex-wrap: wrap;
+				padding-bottom: 1rem;
+				padding: 0 1rem;
+
+				> div {
+					width: clamp(150px, fit-content, 250px);
+					padding: 1rem 0.5rem;
+					font-size: 0.5rem;
+
+					> h1 {
+						font-size: 0.9rem;
+						// width: fit-content;
+						margin: 0 auto;
+					}
+
+					> h3 {
+						font-size: 0.8rem;
+						// width: fit-content;
+						margin: 0 auto;
+						text-align: left;
+						color: $secondaryColor;
+					}
+				}
+			}
+			.footer {
+				@include flex(row, center, center, 1rem);
+				flex-wrap: wrap;
+				> div {
+					width: clamp(100px, 30%, 500px);
+					background-color: $secondaryColor;
+					padding: 1rem;
+					border-radius: 5px;
+					> .heading {
+						@include flex(row, flex-start, center, 1rem);
+						color: #fcfcfc;
+					}
+					> .content {
+						font-size: 1.2rem;
+						color: #fcfcfc;
+						padding-top: 1rem;
+					}
+				}
+			}
+		}
+		.below {
+			padding: 1rem 0;
+			height: 30%;
+			padding: 2rem;
+			// border: 1.5px solid $secondaryColor;
+			box-shadow: $secondaryColor 0px 0px 0px 1.5px;
+			border-radius: 10px;
+			@include flex(row, flex-start, flex-start, 1rem);
+			flex-wrap: wrap;
+			h1 {
+				width: 100%;
+				color: $secondaryColor;
+				font-weight: 600;
+			}
+			h2 {
+				width: fit-content;
+				font-weight: normal;
+				@include flex(row, flex-start, center, 1rem);
+				img,
+				svg {
+					fill: $secondaryColor;
+				}
+				&:nth-child(3) {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+	.usertop {
+		width: calc(100% - 23rem);
+		padding: 1rem 0.3rem;
+		// border: 1.5px solid $secondaryColor;
+		box-shadow: $secondaryColor 0px 0px 0px 1.5px;
+		border-radius: 10px;
+
+		.header {
+			@include flex(row, space-between, center, 0.3rem);
+			flex-wrap: wrap;
+			padding-bottom: 1rem;
+			padding: 0 1rem;
+
+			> div {
+				width: clamp(150px, fit-content, 350px);
+				padding: 0.6rem 0rem;
+				font-size: 0.5rem;
+
+				> h1 {
+					font-size: 0.9rem;
+					// width: fit-content;
+					margin: 0 auto;
+				}
+
+				> h3 {
+					font-size: 0.8rem;
+					// width: fit-content;
+					margin: 0 auto;
+					text-align: left;
+					color: $secondaryColor;
+				}
+			}
+		}
+		.footer {
+			padding: 1rem;
+			@include flex(row, space-between, center, 1rem);
+			flex-wrap: wrap;
+			> div {
+				width: clamp(150px, 31%, 450px);
+				background-color: $secondaryColor;
+				padding: 1rem;
+				border-radius: 5px;
+				> .heading {
+					@include flex(row, flex-start, center, 1rem);
+					color: #fcfcfc;
+				}
+				> .content {
+					font-size: 1.2rem;
+					color: #fcfcfc;
+					padding-top: 1rem;
+				}
+			}
+		}
+	}
+
+	> .profile-navigator {
+		width: 18rem;
+		padding: 2rem;
+		border-radius: 10px;
+		padding: 3rem 1rem;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1.4px;
+		@include flex(column, center, center, 1.5rem);
+
+		.btn {
+			width: 90%;
+			text-align: center;
+			padding: 0.5rem;
+			font-size: 1.2rem;
+			border-radius: 0.5rem;
+			box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+			&:nth-child(1) {
+				background-color: $primaryColor;
+				color: #fff;
+			}
+		}
+
+		.btn:hover {
+			background-color: $primaryColor;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+
+	.bottom {
+		width: calc(100% - 20rem);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1.4px;
+		border-radius: 0.5rem;
+		> form {
+			padding: 3rem 4rem;
+			border-radius: 8px;
+			@include flex(column, flex-start, center, 1rem);
+			width: 100%;
+			> div {
+				@include grid(35% 65%);
+				row-gap: 0;
+				width: 100%;
+				align-items: center;
+				> label {
+					font-size: 1.2rem;
+					color: $secondaryColor;
+				}
+				> input {
+					@include inputStyles;
+					box-shadow: 0 0 2px rgba(185, 184, 184, 0.826);
+					border-radius: 5px;
+					font-size: 1.2rem;
+				}
+				.files-dropzone {
+					color: #fcfcfc;
+					background-color: #029e9d;
+					text-align: center;
+					padding: 1rem 1rem;
+					width: fit-content;
+					margin: 0 auto;
+					margin-top: 1rem;
+					border-radius: 3px;
+				}
+			}
+			> button {
+				padding: 1rem 2rem;
+				background-color: $primaryColor;
+				font-size: 1.2rem;
+				border-radius: 8px;
+				color: #fff;
+				align-self: flex-end;
+			}
+		}
+	}
+	.footer {
+		@include flex(row, center, center, 1rem);
+		flex-wrap: wrap;
+		> div {
+			width: clamp(200px, 30%, 450px);
+			background-color: $secondaryColor;
+			padding: 1rem;
+			border-radius: 5px;
+			> .heading {
+				@include flex(row, flex-start, center, 1rem);
+				color: #fcfcfc;
+			}
+			> .content {
+				font-size: 1.2rem;
+				color: #fcfcfc;
+				padding-top: 1rem;
+			}
+		}
+	}
+}

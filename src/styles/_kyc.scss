@@ -1,0 +1,162 @@
+.kycPage {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> .kyc {
+		padding: 1rem 0;
+		@include flex(column, center, center, 1rem);
+		.cardWidget {
+			width: 100%;
+			@include flex(row, space-between, center);
+		}
+		input {
+			padding: 1rem;
+			outline: none;
+			border: none;
+			width: 40em;
+			border-radius: 5px;
+		}
+
+		.kycTable {
+			// box-shadow: 0px 1px 2px 1px grey;
+			border-radius: 7px;
+			padding: 1rem 1rem;
+			width: 100%;
+			> .tableHeading {
+				background-color: $secondaryColor !important;
+				width: 100%;
+			}
+
+			> .Table {
+				height: 90vh;
+				overflow-y: scroll;
+				width: 100%;
+				overflow-x: scroll;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+				border: 2px solid $secondaryColor;
+				> .tableContentBody {
+					height: 90vh;
+					max-height: 100vh;
+				}
+			}
+
+			&:nth-child(2) {
+				> .Table {
+					height: 60vh;
+				}
+				.tableHeading {
+					background-color: $primaryColor !important;
+					width: 100%;
+					// min-width: 510px;
+					overflow-x: scroll;
+				}
+			}
+		}
+
+		.kycregistration {
+			width: 100%;
+			border-radius: 10px;
+			padding: 0 1rem;
+			overflow: hidden;
+			> .heading {
+				display: flex;
+				width: 100%;
+				gap: 1rem;
+				background-color: $primaryColor;
+				padding: 1rem 2rem;
+				align-items: center;
+				justify-content: space-between;
+				border-radius: 8px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+
+				> p {
+					color: #fff;
+					font-size: 1.5rem;
+				}
+			}
+
+			> .body {
+				border: 1px solid $secondaryColor;
+				background-color: #f7f7f7;
+				border-bottom-left-radius: 8px;
+				border-bottom-right-radius: 8px;
+				// min-height: 50vh;
+				overflow-x: scroll;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+				.content {
+					display: flex;
+					gap: 1rem;
+					align-items: center;
+					justify-content: space-around;
+					padding: 1rem;
+					overflow-x: scroll;
+					min-width: 520px;
+					&::-webkit-scrollbar {
+						display: none;
+					}
+
+					> .fees {
+						h1 {
+							text-align: center;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 2rem;
+						}
+						> p {
+							text-align: center;
+						}
+						// background-color: red;
+						align-items: flex-end;
+						width: 100%;
+						justify-content: center;
+					}
+					> .photo,
+					.aadhar {
+						text-align: center;
+						width: 50%;
+						> .kyc-image {
+							width: 80%;
+							border-radius: 8px;
+							aspect-ratio: 1;
+						}
+					}
+				}
+
+				.footer {
+					display: flex;
+					justify-content: flex-end;
+					border-top: 1px solid #000;
+					background-color: transparent;
+					// border-bottom-left-radius: 8px;
+					// border-bottom-right-radius: 8px;
+					background-color: #aec0d2;
+					overflow-x: scroll;
+					min-width: 520px;
+					&::-webkit-scrollbar {
+						display: none;
+					}
+					// margin: 1rem 0;
+					> button {
+						padding: 1rem 3rem;
+						font-size: 1rem;
+						margin: 1rem;
+						background-color: red;
+						color: white;
+						border-radius: 8px;
+					}
+
+					> button:nth-child(2) {
+						background-color: $secondaryColor;
+					}
+				}
+			}
+		}
+	}
+}

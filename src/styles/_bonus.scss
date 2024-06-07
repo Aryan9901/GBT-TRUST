@@ -1,0 +1,84 @@
+.bonus {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> h2 {
+		font-size: 2.2rem;
+		margin: 1rem 2rem;
+		@include heading(0px);
+	}
+
+	> .wallet-transfer {
+		margin: 1rem 2.2rem;
+		> .heading {
+			display: flex;
+			width: 100%;
+			background-color: $secondaryColor;
+			padding: 1rem 2rem;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 8px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			> p {
+				color: #fff;
+				font-size: 1.5rem;
+			}
+			> button {
+				@include flex(row, flex-start, center, 0.2rem);
+				padding-left: 1rem;
+				border-radius: 5px;
+				> input {
+					@include inputStyles;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		> .body {
+			width: 100%;
+			padding: 1rem 2rem;
+			border: 1px solid $secondaryColor;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			> h3 {
+				font-size: 1.4rem;
+				margin-bottom: 1rem;
+			}
+			> form {
+				@include flex(column, flex-start, flex-start, 1rem);
+				> div {
+					@include grid(1fr 1fr);
+					width: 100%;
+					> input {
+						@include inputStyles;
+						border: 1.5px solid #b9b9b9;
+						background-color: #fff;
+					}
+					> div {
+						> input {
+							margin-top: 0.5rem;
+							@include inputStyles;
+							border: 1.5px solid #b9b9b9;
+							background-color: #fff;
+						}
+					}
+				}
+
+				> .transfer-button {
+					display: flex;
+					justify-content: flex-end;
+					> button {
+						padding: 1rem 4rem;
+						border-radius: 8px;
+						background-color: $primaryColor;
+						color: white;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

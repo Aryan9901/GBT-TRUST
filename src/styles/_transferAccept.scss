@@ -1,0 +1,106 @@
+.transferAccept {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> h2 {
+		margin: 1rem 2rem;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	> .flexDiv {
+		padding: 0 2rem;
+		@include flex(row, center, flex-start, 1rem);
+		flex-wrap: wrap;
+		> .query {
+			// min-width: 30px;
+			width: 45%;
+			min-width: 320px;
+			padding: 2rem 3rem;
+			background-color: #fcfcfc;
+			border-radius: 14px;
+			margin: 2rem auto;
+
+			> h3 {
+				font-size: 1.8rem;
+				opacity: 0.7;
+			}
+			> h5 {
+				opacity: 1;
+				font-size: 1.5rem;
+				margin: 0.5rem 0;
+			}
+			> h6 {
+				font-size: 1.5rem;
+				opacity: 0.7;
+			}
+			> p {
+				font-size: 1.3rem;
+				font-weight: 500;
+			}
+		}
+		> .paymentDetails {
+			width: 50%;
+			min-width: 320px;
+			// min-width: 100px;
+			background-color: #fcfcfc;
+			border-radius: 14px;
+			margin: 2rem auto;
+			@include flex(column, center, flex-start, 0);
+			flex-wrap: wrap;
+			> .left {
+				// padding: 3rem;
+				padding: 2rem;
+				min-width: 200px;
+				width: 100%;
+				> img {
+					@include square(17rem);
+					// width: 100%;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			> .right {
+				min-width: 200px;
+				height: 100%;
+				width: 100%;
+				@include flex(column, center, flex-start, 1rem);
+				padding: 0 4rem;
+				padding-bottom: 2rem;
+				> h3 {
+					font-size: 2rem;
+					opacity: 0.7;
+				}
+				> h5 {
+					opacity: 0.8;
+					font-size: 1.1rem;
+				}
+			}
+			.buttonsConf {
+				width: 100%;
+				@include flex(row, center, flex-start, 1rem);
+				flex-wrap: wrap;
+				padding: 0rem 3rem;
+				> button {
+					width: 100%;
+					height: 50px;
+					font-size: 1.5rem;
+					font-weight: 500;
+					margin: 0rem 0;
+					padding: 0.5rem 1rem;
+					border-radius: 14px;
+					border: none;
+					background-color: #000000;
+					color: #fff;
+					&:nth-child(1) {
+						background-color: green;
+					}
+					&:nth-child(2) {
+						background-color: red;
+					}
+				}
+			}
+		}
+	}
+}

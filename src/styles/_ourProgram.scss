@@ -1,0 +1,137 @@
+.ourProgram {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.Programs {
+	padding: 1rem;
+	// width: 100vw;
+	@include flex(column, center, center, 1rem);
+
+	.cardWidget {
+		width: 100%;
+		@include flex(row, space-between, center);
+	}
+
+	input {
+		padding: 1rem;
+		outline: none;
+		border: none;
+		width: 40em;
+		border-radius: 5px;
+	}
+
+	.mini-table1 {
+		width: 100%;
+		// min-height: 20px;
+
+		box-shadow: 0px 1px 2px 1px grey;
+		border-radius: 10px;
+		overflow: hidden;
+
+		> .tableHeading {
+			background-color: $primaryColor !important;
+		}
+
+		> .Table {
+			height: 60vh;
+			overflow-y: scroll;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		&:nth-child(3) {
+			> .Table {
+				// height: 60vh;
+			}
+
+			.tableHeading {
+				background-color: $secondaryColor !important;
+			}
+		}
+	}
+}
+
+.registration {
+	width: 100%;
+
+	> .heading {
+		display: flex;
+		width: 100%;
+		background-color: $primaryColor;
+		padding: 1rem 2rem;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 8px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+		> p {
+			color: #fff;
+			font-size: 1.5rem;
+		}
+	}
+
+	> .body {
+		border: 1px solid $secondaryColor;
+		background-color: #f7f7f7;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+		> .content-row1 {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+
+			> .performer-image {
+				display: flex;
+				gap: 1rem;
+				padding: 1rem;
+			}
+
+			> .fees {
+				h1 {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 2rem;
+				}
+
+				// background-color: red;
+				align-items: center;
+			}
+
+			> .photo {
+				> .kyc-image {
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+
+		> .footer {
+			display: flex;
+			justify-content: flex-end;
+			background-color: #aec0d2;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+
+			> button {
+				padding: 1rem 3rem;
+				font-size: 1rem;
+				margin: 1rem;
+				background-color: red;
+				color: white;
+				border-radius: 8px;
+			}
+
+			> button:nth-child(2) {
+				background-color: $secondaryColor;
+			}
+		}
+	}
+}

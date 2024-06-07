@@ -1,0 +1,224 @@
+.refers {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> h2 {
+		font-size: 2.2rem;
+		margin: 1rem 2rem;
+	}
+	> .widget-container {
+		@include flex(row, space-around, stretch, 1rem);
+		flex-wrap: wrap;
+		padding: 1rem 2rem;
+		> .widget {
+			width: clamp(300px, 32%, 450px);
+			padding: 2rem;
+			border-radius: 8px;
+			background-color: $secondaryColor;
+			color: #fcfcfc;
+			@include flex(column, space-between, center, 1rem);
+			> h4 {
+				font-size: 1.2rem;
+			}
+			> i {
+				@include square(4rem);
+				@include flex(row, center, center, 0);
+				background-color: $primaryColor;
+				border-radius: 50%;
+				> svg {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	> .referalContainer {
+		@include flex(row, space-around, stretch, 1rem);
+		flex-wrap: wrap;
+		padding: 1rem 2rem;
+		> div {
+			width: clamp(450px, 48%, 860px);
+			border-radius: 8px;
+			// height: 40vh;
+			height: fit-content;
+			padding: 1rem 0;
+			border: 1.5px solid $secondaryColor;
+		}
+	}
+
+	.TractContainer {
+		@include flex(row, space-around, stretch, 1rem);
+		flex-wrap: wrap;
+		padding: 1rem;
+		> div {
+			width: 100%;
+			border-radius: 8px;
+			// height: 40vh;
+			height: fit-content;
+			padding: 1rem 0;
+			border: 2px solid $secondaryColor;
+		}
+		> div:last-child {
+			width: 100%;
+		}
+	}
+
+	.trackConversion {
+		width: 100%;
+		.left {
+			width: 100%;
+			padding: 1rem 2rem;
+			@include flex(column, space-between, center);
+			div {
+				width: 100%;
+				@include flex(row, space-between, center);
+				> input {
+					@include inputStyles;
+					width: 100%;
+					border: 1px solid #029e9d;
+					border-radius: 0.5rem;
+				}
+				button {
+					width: 50%;
+					padding: 1rem 2rem;
+					@include flex(row, center, center, 1rem);
+					background-color: $secondaryColor;
+					color: #fff;
+					font-size: 1.2rem;
+					border-radius: 0.5rem;
+				}
+			}
+			.timeline {
+				margin: 1rem 0;
+				@include flex(row, space-between);
+				.event-items {
+					position: relative;
+					@include flex(column, center, center);
+					// width: 9r;
+
+					&:not(:first-child):before {
+						content: "";
+						background-color: slategray;
+						position: absolute;
+						width: 105%;
+						height: 3px;
+						left: 0%;
+						top: 1.25rem;
+						transform: translateY(0.125rem) translateX(-50%);
+					}
+
+					.event {
+						width: 2.5rem;
+						height: 2.5rem;
+						@include flex(row, center, center);
+						font-weight: 600;
+						z-index: 10;
+						position: relative;
+						background-color: #777;
+						color: #fff;
+						border-radius: 50%;
+					}
+
+					.timeline-content {
+						color: $secondaryColor;
+						font-size: 1.2rem;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	.invitePeople {
+		> h3 {
+			margin: 1rem;
+		}
+		> div {
+			@include flex(row, space-between, center, 1rem);
+			padding: 0 1rem;
+			> input {
+				@include inputStyles;
+				border: 2px solid $secondaryColor;
+			}
+			> button {
+				@include flex(row, center, center, 1rem);
+				padding: 1rem 2.3rem;
+				background-color: $primaryColor;
+				font-size: 1.2rem;
+				border-radius: 5px;
+				color: #fcfcfc;
+			}
+		}
+		> div:nth-child(3) {
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 1rem 2rem;
+			border: 1.5px solid $secondaryColor;
+			margin: 1rem 1rem;
+			border-radius: 8px;
+			row-gap: 0.4rem;
+			> h4 {
+				color: #0066cc;
+				font-size: 0.8rem;
+			}
+			> p {
+				font-size: 0.8rem;
+			}
+		}
+		> button {
+			align-self: flex-end;
+			padding: 1rem 2.4rem;
+			border-radius: 8px;
+			background-color: $secondaryColor;
+			display: block;
+			margin-left: auto;
+			margin-right: 1rem;
+			color: #fcfcfc;
+			font-size: 1.2rem;
+		}
+	}
+	.myRefferalLink {
+		> h3 {
+			margin: 1rem;
+		}
+		> div {
+			@include flex(row, space-between, center, 1rem);
+			padding: 0 1rem;
+			> input {
+				@include inputStyles;
+				border: 2px solid $secondaryColor;
+			}
+			> button {
+				@include flex(row, center, center, 1rem);
+				padding: 1rem 2.3rem;
+				background-color: $primaryColor;
+				font-size: 1.2rem;
+				border-radius: 5px;
+				color: #fcfcfc;
+			}
+		}
+		> div:nth-child(3) {
+			flex-direction: column;
+			row-gap: 0.3rem;
+			align-items: flex-start;
+			padding: 1rem 1rem;
+			> div {
+				@include flex(row, space-between, center, 0);
+				width: 100%;
+				padding: 1rem;
+				background-color: #a7a5a5d7;
+				border-radius: 8px;
+				> div {
+					@include flex(row, flex-start, center, 1rem);
+				}
+
+				> a {
+					color: #0066cc;
+					font-size: 1rem;
+					font-weight: 600;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

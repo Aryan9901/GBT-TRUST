@@ -1,0 +1,129 @@
+.team {
+    >.team__header {
+        padding: 1rem;
+        @include flex(row, space-around, center);
+
+        >.css-b62m3t-container {
+            width: 100%;
+            margin: 0 1rem;
+        }
+    }
+
+    >.team__table {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+
+        .Table {
+            // border: 2px solid $primaryColor;
+            border-radius: 1rem;
+            border-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 1px 1px 1px $primaryColor;
+
+            .headers {
+                padding: 1.5rem 0;
+            }
+        }
+
+        .tableHeading {
+            box-shadow: 0 1px 1px 1px $primaryColor;
+            border-radius: 1rem;
+            background-color: $primaryColor;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: $primaryColor;
+        }
+    }
+
+    >.team__footer {
+        width: 100%;
+        padding: 1rem 2rem;
+        @include flex(row, space-between, center);
+        overflow: hidden;
+
+        >.top_performer {
+            width: 100%;
+            border: 2px solid $secondaryColor;
+            border-radius: 12px;
+            align-self: flex-start;
+            >.heading {
+                width: 100%;
+                background-color: $secondaryColor;
+                color: #fff;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                border-radius: 10px;
+            }
+
+            >.table-performer {
+                width: 100%;
+                @include flex(column, center, center, 0);
+
+                >.singlePerformer {
+                    padding: 0 1rem;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 80% 20%;
+                    align-items: center;
+
+                    >.performer-image {
+                        @include flex(row, flex-start, center);
+                        width: 100%;
+
+                        >img {
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    >.price {
+                        width: 100%;
+                        color: $accentColor;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                    }
+                }
+
+            }
+        }
+
+        >.group_performance {
+            width: 100%;
+            border: 2px solid $secondaryColor;
+            border-radius: 12px;
+            padding: 2rem 2rem;
+
+            >h1 {
+                width: 100%;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .your_performance {
+            box-shadow: 0px 0px 2px 1px $secondaryColor;
+            border-radius: 6px;
+            padding: 2rem;
+            h1{
+                @include flex(row, space-between, center);
+                width: 100%;
+                font-weight: normal;
+            }
+            canvas {
+                padding: 2rem;
+                width: 100%;
+            }
+            .left-footer{
+				@include flex(row, center, center);
+				.circ{
+					@include square(2rem);
+					border-radius: 50%;
+					background-color: $primaryColor;
+				}
+			}
+        }
+    }
+}

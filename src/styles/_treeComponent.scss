@@ -1,0 +1,40 @@
+.tree {
+	width: 100%;
+	@include flex(column, space-between, center, 1rem);
+	padding: 1rem;
+	position: relative;
+	> .tree__header {
+		width: 100%;
+		@include flex(row, space-between, center);
+		padding: 0 1rem;
+	}
+	background-color:rgba(79, 144, 255, 0.0705882353);
+
+	.tree-item {
+		width: fit-content;
+		padding: 2rem 4rem;
+		border: 1px solid #000;
+		height: 10%;
+		// background-color: red;
+	}
+
+	.chakra-stack {
+		width: 100vw;
+		// background-color: #4f90ff12;
+	}
+
+	.rd3t-node {
+		width: 100vw;
+		background-color: maroon !important;
+		> svg {
+			width: 100%;
+		}
+	.rd3t-tree-container {
+		width: 100vw;
+		background-color: #4f90ff12;
+	}.rd3t-tree-container {
+		width: 100vw;
+		background-color: #4f90ff12;
+	}}
+}
+

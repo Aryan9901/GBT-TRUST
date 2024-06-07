@@ -1,0 +1,365 @@
+.signup {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	> .login-nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 5rem 0;
+		padding: 1rem 4rem;
+		> img {
+			width: 16%;
+		}
+		> button {
+			padding: 1rem 2rem;
+			border-radius: 5px;
+			background-color: #009f9c;
+			color: #fcfcfc;
+			font-weight: 600;
+			border: none;
+			outline: none;
+			&:hover {
+				filter: brightness(0.9);
+				color: #fff;
+			}
+		}
+	}
+	> .login-main {
+		width: 95%;
+		@include flex(row, center, center, 0);
+		> section {
+			box-shadow: 0 0 3px 1px #e4e4e4;
+			@include flex(row, unset, unset, 0);
+			border-radius: 20px;
+			overflow: hidden;
+			background-color: #fefefc;
+			> img {
+				// height: 100vh;
+				// width: 59%;
+				padding: 1rem 5rem;
+				border-radius: 10px;
+				// background: linear-gradient(to bottom, #CD8A81 0%, #7E7083 100%);
+			}
+			> form {
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center !important;
+				justify-content: center !important;
+				padding-top: 9rem;
+				padding: 1rem 3rem;
+				width: 100%;
+				font-family: Poppins;
+				> h2 {
+					font-size: 2rem;
+					@include heading;
+					font-weight: 600;
+					font-family: helvetica;
+				}
+				> p {
+					font-size: 1rem;
+					color: $textColor;
+				}
+				@include flex(column, flex-start, flex-start, 0.5rem);
+				> .input-container {
+					width: 100%;
+					margin: 0 1rem;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: space-between;
+					row-gap: 0.5rem;
+					.css-b62m3t-container {
+						width: 49%;
+					}
+					> input {
+						// margin-top: 1rem;
+						@include inputStyles(unset, 0.5rem 1rem, inherit, 1.2px solid #9c9898);
+						border-radius: 5px;
+						font-size: 1.1rem;
+						color: #222;
+						font-weight: 500;
+						width: 49%;
+						&::placeholder {
+							color: #020202;
+							font-weight: 300;
+							opacity: 0.4;
+						}
+
+						&:first-child {
+							width: 100%;
+						}
+
+						&:last-child {
+							width: 100%;
+						}
+					}
+				}
+				> button {
+					width: 100%;
+					padding: 1rem 2rem;
+					border-radius: 5px;
+					font-weight: 600;
+					border: none;
+					outline: none;
+					color: #fcfcfc;
+					background-color: $primaryColor;
+					font-size: 1.3rem;
+
+					&:hover {
+						filter: brightness(0.9);
+					}
+				}
+				> .action-container {
+					width: 100%;
+					@include flex(row, space-between, center, 3 rem);
+					> .remember-me {
+						@include flex(row, flex-start, center, 0.5rem);
+					}
+					> p {
+						color: $secondaryColor;
+						font-weight: 600;
+					}
+				}
+				> .account {
+					@include flex(row, center, center, 0.5rem);
+					color: #000;
+					> span {
+						color: $secondaryColor;
+						font-weight: 600;
+						cursor: pointer;
+					}
+				}
+
+				> .files {
+					@include flex(row, center, center, 2rem);
+					width: 100%;
+
+					.single-file {
+						@include flex(column, center, center, -0.1rem);
+						> label {
+							color: $secondaryColor;
+						}
+						> p {
+							width: 100%;
+							padding: 0 0.3rem;
+							font-size: 0.86rem;
+							&:hover {
+								// background-color: red;
+							}
+							@include flex(row, space-between, center, 0);
+							> svg {
+								font-size: 2rem;
+								cursor: pointer;
+							}
+						}
+						.file {
+							border: 2px dashed $secondaryColor;
+							padding: 0.5rem 2rem;
+							.files-dropzone {
+								padding: 0.7rem 2.5rem;
+								width: fit-content;
+								background-color: $tertiaryColor;
+								border-radius: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.signin {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	> .login-nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 5rem 0;
+		padding: 1rem 4rem;
+		> img {
+			width: 16%;
+		}
+		> button {
+			padding: 1rem 2rem;
+			border-radius: 5px;
+			background-color: #009f9c;
+			color: #fcfcfc;
+			font-weight: 600;
+			border: none;
+			outline: none;
+			&:hover {
+				filter: brightness(0.9);
+				color: #fff;
+			}
+		}
+	}
+	> .login-main {
+		width: 95%;
+		@include flex(row, center, center, 0);
+		> section {
+			box-shadow: 0 0 3px 1px #e4e4e4;
+			@include flex(row, unset, unset, 0);
+			border-radius: 20px;
+			overflow: hidden;
+			background-color: #fefefc;
+			> img {
+				// height: 100vh;
+				// width: 59%;
+				padding: 1rem 5rem;
+				border-radius: 10px;
+				// background: linear-gradient(to bottom, #CD8A81 0%, #7E7083 100%);
+			}
+			> form {
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center !important;
+				justify-content: center !important;
+				padding-top: 9rem;
+				padding: 1rem 3rem;
+				width: 100%;
+				font-family: Poppins;
+				> h2 {
+					font-size: 2rem;
+					@include heading;
+					font-weight: 600;
+					font-family: helvetica;
+				}
+				> p {
+					font-size: 1rem;
+					color: $textColor;
+				}
+				@include flex(column, flex-start, flex-start, 0.5rem);
+				> .input-container {
+					width: 100%;
+					margin: 0 1rem;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: space-between;
+					row-gap: 0.5rem;
+					.css-b62m3t-container {
+						width: 49%;
+					}
+					> input {
+						// margin-top: 1rem;
+						@include inputStyles(unset, 0.5rem 1rem, inherit, 1.2px solid #9c9898);
+						border-radius: 5px;
+						font-size: 1.1rem;
+						color: #222;
+						font-weight: 500;
+						width: 49%;
+						&::placeholder {
+							color: #020202;
+							font-weight: 300;
+							opacity: 0.4;
+						}
+
+						&:first-child {
+							width: 100%;
+						}
+
+						&:last-child {
+							width: 100%;
+						}
+					}
+				}
+				> button {
+					width: 100%;
+					padding: 1rem 2rem;
+					border-radius: 5px;
+					font-weight: 600;
+					border: none;
+					outline: none;
+					color: #fcfcfc;
+					background-color: $primaryColor;
+					font-size: 1.3rem;
+
+					&:hover {
+						filter: brightness(0.9);
+					}
+				}
+				> .action-container {
+					width: 100%;
+					@include flex(row, space-between, center, 3 rem);
+					> .remember-me {
+						@include flex(row, flex-start, center, 0.5rem);
+					}
+					> p {
+						color: $secondaryColor;
+						font-weight: 600;
+					}
+				}
+				> .account {
+					@include flex(row, center, center, 0.5rem);
+					color: #000;
+					> span {
+						color: $secondaryColor;
+						font-weight: 600;
+						cursor: pointer;
+					}
+				}
+
+				> .files {
+					@include flex(row, center, center, 2rem);
+					width: 100%;
+
+					.single-file {
+						@include flex(column, center, center, -0.1rem);
+						> label {
+							color: $secondaryColor;
+						}
+						.file {
+							border: 2px dashed $secondaryColor;
+							padding: 0.5rem 2rem;
+							.files-dropzone {
+								padding: 0.7rem 2.5rem;
+								width: fit-content;
+								background-color: $tertiaryColor;
+								border-radius: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.right-container {
+	position: relative;
+	@include flex(row, center, center, 0);
+	background: linear-gradient(to bottom, #cd8a81 0%, #7e7083 100%);
+
+	> .top-circle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.5;
+		width: 30%;
+	}
+
+	> .bottom-circle {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		z-index: 0;
+		opacity: 0.4;
+	}
+}
+
+.GBT-logo {
+	width: 20%;
+	// background-color: red;
+}

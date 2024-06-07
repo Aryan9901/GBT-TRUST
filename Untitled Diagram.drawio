@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2024-06-01T08:37:31.504Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="XLXeSTPMtFQe6BpuoZ2e" version="24.4.13" type="github">
+  <diagram name="Page-1" id="z8nZJkmoYH7gEHDk-RgT">
+    <mxGraphModel dx="1323" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hfsCKlydouFFHumRqm6N-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="hfsCKlydouFFHumRqm6N-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="280" />
+              <mxPoint x="640" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="hfsCKlydouFFHumRqm6N-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="USER" style="shape=table;startSize=75;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="246" y="250" width="100" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="TRANSACTION" style="shape=table;startSize=75;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="167" y="425" width="105" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="DONATION" style="shape=table;startSize=75;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="600" width="100" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="APPLICATION" style="shape=table;startSize=75;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="550" width="100" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="DONOR" style="shape=table;startSize=75;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="700" width="100" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="performs" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmany;endSize=10;;exitX=0.17633928571428556;exitY=1;entryX=0.5047619047619047;entryY=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="revenue source" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmany;endSize=10;;exitX=0.3006802721088435;exitY=1;entryX=0.5;entryY=0;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="enrolls" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmany;endSize=10;;exitX=0.9129251700680272;exitY=1;entryX=0.17633928571428556;entryY=0;" parent="1" source="3" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="PAYMENTS" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmany;endSize=10;;exitX=0.7178794642857145;exitY=0;entryX=1.00359375;entryY=0.888888888888889;" parent="1" source="5" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="446" y="550" />
+              <mxPoint x="446" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="introduces" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmany;endSize=10;;exitX=0.50359375;exitY=1;entryX=0.50359375;entryY=0;" parent="1" source="5" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hfsCKlydouFFHumRqm6N-12" target="hfsCKlydouFFHumRqm6N-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-12" value="REQUEST EVENT" style="rhombus;whiteSpace=wrap;html=1;startSize=75;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="100" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-14" value="ADMIN APPROVAL" style="whiteSpace=wrap;html=1;startSize=75;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hfsCKlydouFFHumRqm6N-16" target="hfsCKlydouFFHumRqm6N-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hfsCKlydouFFHumRqm6N-16" value="REQUEST WITHDRAWAL" style="rhombus;whiteSpace=wrap;html=1;startSize=75;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="130" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,310 @@
+.bankTransfer {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	> .cardWidget {
+		@include flex(row, space-between, center, 1rem);
+		flex-wrap: wrap;
+		padding: 2rem;
+		> .pinCard {
+			width: 30%;
+			min-width: 160px;
+		}
+	}
+	.tableContainers {
+		margin: 1rem 2rem;
+		margin-bottom: 2rem;
+		> .tableHeading {
+			background-color: $secondaryColor;
+			> p {
+				color: #fcfcfc;
+			}
+			> .billHeaders {
+				width: 100%;
+				// height: 100%;
+				// background-color: red;
+				// padding: 4rem;
+				display: flex;
+				color: #fcfcfc;
+				align-items: center;
+				justify-content: space-between;
+				> * {
+					font-family: "Gilroy";
+					font-weight: 500;
+					font-size: 0.9rem;
+				}
+			}
+		}
+		> .Table {
+			border: 1.5px solid #029e9d;
+			> .tableContentBody {
+				.billTotal {
+					width: 100%;
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+					flex-direction: column;
+					padding: 1rem 4rem;
+					> div {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						width: 40%;
+						place-items: end;
+						// gap: 2rem;
+					}
+				}
+			}
+			.billTotal {
+				width: 100%;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				flex-direction: column;
+				padding: 1rem 4rem;
+				background-color: #029e9d;
+				> div {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					width: 100%;
+					place-items: end;
+					color: #fcfcfc;
+					// gap: 2rem;
+					> h4:first-child {
+						place-self: start;
+					}
+					&:last-child {
+						border-top: 1.5px solid #000;
+						margin-top: 1rem;
+						> h4 {
+							font-size: 1.5rem;
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	> .top_performer {
+		border: 2px solid $secondaryColor;
+		border-radius: 12px;
+		width: 50%;
+
+		> .heading {
+			width: 100%;
+			background-color: $secondaryColor;
+			color: #fff;
+			padding: 1rem 2rem;
+			font-size: 1.5rem;
+			border-radius: 10px;
+		}
+
+		> .table-performer {
+			width: 100%;
+			@include flex(column, center, center);
+
+			> .singlePerformer {
+				padding: 0.5rem;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 80% 20%;
+				align-items: center;
+
+				> .performer-image {
+					@include flex(row, flex-start, center);
+					width: 100%;
+
+					> img {
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+					}
+				}
+
+				> .price {
+					width: 100%;
+					color: $accentColor;
+					font-weight: 600;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.wallet-transfer {
+		margin: 1rem 2.2rem;
+		> .heading {
+			display: flex;
+			width: 100%;
+			background-color: $secondaryColor;
+			padding: 1rem 2rem;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 8px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			> p {
+				color: #fff;
+				font-size: 1.5rem;
+			}
+			> button {
+				@include flex(row, flex-start, center, 0.2rem);
+				padding-left: 1rem;
+				border-radius: 5px;
+				> input {
+					@include inputStyles;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		> .body {
+			width: 100%;
+			padding: 1rem 2rem;
+			border: 1px solid $secondaryColor;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			> h3 {
+				font-size: 1.4rem;
+				margin-bottom: 1rem;
+			}
+			> form {
+				@include flex(column, flex-start, flex-start, 1rem);
+				> div {
+					@include grid(1fr 1fr);
+					width: 100%;
+					> input {
+						@include inputStyles;
+						border: 1.5px solid #b9b9b9;
+						background-color: #fff;
+					}
+					> div {
+						> input {
+							margin-top: 0.5rem;
+							@include inputStyles;
+							border: 1.5px solid #b9b9b9;
+							background-color: #fff;
+						}
+					}
+				}
+
+				> .transfer-button {
+					display: flex;
+					justify-content: flex-end;
+					> button {
+						padding: 1rem 4rem;
+						border-radius: 8px;
+						background-color: $primaryColor;
+						color: white;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	.wallet-pin-container {
+		display: flex;
+		flex-wrap: wrap;
+		> .withdrawalrequesttable {
+			margin: 1rem 0 2rem 1rem;
+			width: 55%;
+			min-width: 400px;
+		}
+		> .my-wallet {
+			padding: 2rem;
+			border: 1px solid $secondaryColor;
+			border-radius: 1rem;
+			width: 35%;
+			min-width: 280px;
+			margin: 1rem 0 2rem 2rem;
+
+			> .wallet-header {
+				display: flex;
+				justify-content: space-around;
+
+				> img,
+				svg {
+					height: 1.5rem;
+					width: 2rem;
+					margin: 1rem;
+				}
+			}
+
+			> .wallet-amount {
+				text-align: center;
+				padding: 2rem;
+			}
+
+			> .wallet-buttons {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				> button {
+					margin-top: 1rem;
+					width: 80%;
+				}
+			}
+		}
+
+		> .top_performer {
+			border: 1px solid $secondaryColor;
+			border-radius: 12px;
+			width: 50%;
+			margin: 2rem;
+
+			> .heading {
+				width: 100%;
+				background-color: $secondaryColor;
+				color: #fff;
+				padding: 1rem 2rem;
+				font-size: 1.5rem;
+				border-radius: 10px;
+			}
+
+			> .table-performer {
+				width: 100%;
+				@include flex(column, center, center);
+
+				> .singlePerformer {
+					padding: 0.5rem;
+					width: 100%;
+					display: grid;
+					grid-template-columns: 80% 20%;
+					align-items: center;
+
+					> .performer-image {
+						@include flex(row, flex-start, center);
+						width: 100%;
+
+						> img {
+							width: 50px;
+							height: 50px;
+							border-radius: 50%;
+						}
+					}
+
+					> .price {
+						width: 100%;
+						color: $accentColor;
+						font-weight: 600;
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+	> .transactiondetailstable {
+		margin: 1rem 2rem;
+	}
+}
+.css-dg4p4c-indicatorContainer {
+	display: none !important;
+}
+.css-1u9des2-indicatorSeparator {
+	display: none;
+}
