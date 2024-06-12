@@ -2,7 +2,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-// const URI = "https://gbt-trust-backend.onrender.com/api/v1/user";
 const URI = import.meta.env.VITE_API_ENDPOINT;
 
 export const userLogin = (loginDetails) => async (dispatch) => {
